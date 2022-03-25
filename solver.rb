@@ -7,7 +7,17 @@ class Solver
   def reverse(word)
     word.reverse
   end
+
+  def fizzbuzz(number)
+    return 'fizzbuzz' if (number % 3 && number % 5).zero?
+    return 'fizz' if (number % 3).zero?
+    return 'buzz' if (number % 5).zero?
+    number.to_s
+  end
+
 end
 
 app = Solver.new
-puts app.reverse('hello')
+puts app.fizzbuzz(7)
+
+
