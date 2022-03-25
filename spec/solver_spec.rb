@@ -1,7 +1,7 @@
 require_relative '../solver'
 
 describe Solver do
-  solver= Solver.new
+  solver = Solver.new
   context 'factorial tests' do
     it 'returns 1 if input 0 or 1' do
       expect(solver.factorial(0)).to eq 1
@@ -13,12 +13,12 @@ describe Solver do
     end
 
     it 'give an error when the number is negative' do
-      expect {solver.factorial(-2)}.to raise_exception(TypeError)
+      expect { solver.factorial(-2) }.to raise_exception(TypeError)
     end
   end
 
   context 'reverse method tests' do
-    it "reverse a word" do
+    it 'reverse a word' do
       expect(solver.reverse('hi')).to eq 'ih'
     end
 
