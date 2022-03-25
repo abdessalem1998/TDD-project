@@ -34,4 +34,22 @@ describe Solver do
       expect(solver.reverse('hi there')).to eq 'ereht ih'
     end
   end
+
+  context 'Testing the fizzbuzz method' do
+    it 'returns fizz when n is divisible by 3' do
+      expect(solver.fizzbuzz(3)).to eq 'fizz'
+    end
+
+    it 'returns buzz when n is divisible by 5' do
+      expect(solver.fizzbuzz(5)).to eq 'buzz'
+    end
+
+    it 'returns fizzbuzz when n is divisible by 3 and 5' do
+      expect(solver.fizzbuzz(15)).to eq 'fizzbuzz'
+    end
+
+    it 'number to be returned as a string' do
+      expect(solver.fizzbuzz(7)).to eq '7'
+    end
+  end
 end
